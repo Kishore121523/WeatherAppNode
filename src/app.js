@@ -72,7 +72,7 @@ app.get('/weather', (req, res) => {
   })
 })
 
-// Should be at last
+// Should be at last always
 app.get("/help/*", (req, res) => {
   res.render("404", {
     title: "404",
