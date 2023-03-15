@@ -14,7 +14,7 @@ weatherForm.addEventListener("submit", (e) => {
   msg1Before.textContent = "";
   msg2Before.textContent = "";
 
-  fetch(`http://localhost:3000/weather?address=${location}`).then(
+  fetch(`https://weathery-6zsb.onrender.com//weather?address=${location}`).then(
     (response) => {
       response.json().then((data) => {
         if (data.error) {
