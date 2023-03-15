@@ -13,15 +13,27 @@
 <body>
     <div class="mainContent">
         {{>header}}
-        <p>Use this site to get your weather</p>
-        <form action="">
-            <input type="text" placeholder="Location">
-            <button>Search</button>
-        </form>
-        <p id="message1"></p>
-        <p id="message2"></p>
-    </div>
+        <div class="formContents">
+
+            <form action="">
+                <div class="formFields">
+                <label for="location">Enter your location</label>
+                <input id="location" type="text" placeholder="Location">
+                </div>
+                <button>Search</button>
+            </form>
+
+        </div>
+
+        <div class="outputContents">
+            <p class="message1Before"></p>
+            <p id="message1"></p>
+            <p class="message2Before"></p>
+            <p id="message2"></p>
+        </div>
+
     {{>footer}}
+    </div>
 
 
 <script src="/js/script.js"></script>
